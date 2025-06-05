@@ -7,7 +7,7 @@ pipeline
 		{
 			steps
 			{
-				git 'https://github.com/sudhasaxena/IGP_SudhaSaxenaJune2025.git'
+				sh 'git clone https://github.com/sudhasaxena/IGP_SudhaSaxenaJune2025.git'
 			}
 		}
 		
