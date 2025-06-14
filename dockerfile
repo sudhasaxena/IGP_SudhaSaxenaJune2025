@@ -1,3 +1,3 @@
 FROM tomcat
-COPY target/ABCtechnologies-1.0.war /usr/local/tomcat/webapps/
+COPY abc.war /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
