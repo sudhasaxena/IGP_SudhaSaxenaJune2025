@@ -60,5 +60,14 @@ pipeline {
 			}
 		}
 
+		
+		stage('Deploy to Kubernetes')
+		{
+			steps
+			{
+				sh 'export KUBECONFIG=/root/.kube/config'
+				sh 'kubectl apply -f app.yaml'
+			}
+		}
     }
 }
